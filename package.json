@@ -1,0 +1,37 @@
+{
+  "name": "videojswidget",
+  "widgetName": "VideoJsWidget",
+  "version": "1.0.0",
+  "description": "Videojs widget",
+  "copyright": "2021 Raafat Alghentawi",
+  "author": "Raafat Alghentawi",
+  "config": {
+    "projectPath": "../..//",
+    "mendixHost": "http://localhost:8080",
+    "developmentPort": "3000"
+  },
+  "packagePath": "raafat alghentawi",
+  "scripts": {
+    "start": "pluggable-widgets-tools start:server --open",
+    "dev": "pluggable-widgets-tools start:web",
+    "build": "pluggable-widgets-tools build:web",
+    "lint": "pluggable-widgets-tools lint",
+    "lint:fix": "pluggable-widgets-tools lint:fix",
+    "prerelease": "npm run lint",
+    "release": "pluggable-widgets-tools release:web"
+  },
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@mendix/pluggable-widgets-tools": "^8.14.0",
+    "video.js": "^7.11.4"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "react-clear-cache": "^1.4.12",
+    "react-helmet": "^6.1.0",
+    "react-script-tag": "^1.1.2",
+    "videojs-rotatezoom": "0.0.1",
+    "videojs-share": "^3.2.1",
+    "videojs-social-share-overlay": "0.0.11"
+  }
+}
